@@ -21,7 +21,7 @@ app.use(cookieParser());
 app.use(cors());
 
 mongoose
-  .connect(process.env.MONGODB_URL)
+  .connect("mongodb://localhost:27017/exploringSpace")
   .then(console.log("connected to mongo db"))
   .catch((err) => console.log(err));
 
