@@ -28,9 +28,9 @@ mongoose
   .catch((err) => console.log(err));
 
 cloudinary.config({
-  cloud_name: process.env.CLOUDINARY_NAME,
-  api_key: process.env.CLOUDINARY_API_KEY,
-  api_secret: process.env.CLOUDINARY_API_SECRET,
+  cloud_name: "dd518vun5",
+  api_key: "428127892153512",
+  api_secret: "Gmdjn0nWUR575rImx5KpL2es4RU",
 });
 app.use("/api/n1", userRoute);
 app.use("/api/n1/satellite", async (req, res) => {
