@@ -21,16 +21,14 @@ app.use(cookieParser());
 app.use(cors());
 
 mongoose
-  .connect(
-    "mongodb+srv://nandish1729:Fx8fbRgsW6Nvl3GF@cluster0.idnfnxj.mongodb.net/spaceExploration?retryWrites=true&w=majority"
-  )
+  .connect(process.env.MONOGODB_URL)
   .then(console.log("connected to mongo db"))
   .catch((err) => console.log(err));
 
 cloudinary.config({
-  cloud_name: "dd518vun5",
-  api_key: "428127892153512",
-  api_secret: "Gmdjn0nWUR575rImx5KpL2es4RU",
+  cloud_name: process.env.CLOUDINARY_NAME,
+  api_key: process.env.CLOUDINARY_API_KEY,
+  api_secret: process.env.CLOUDINARY_API_SECRET,
 });
 app.use("/api/n1", userRoute);
 app.use("/api/n1/satellite", async (req, res) => {
