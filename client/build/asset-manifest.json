@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.bfd757ef.css",
+    "main.js": "/static/js/main.be85cabe.js",
+    "static/media/earth-img.jpg": "/static/media/earth-img.c2ab281bdb89672b6e70.jpg",
+    "static/media/home-astronaut.jpg": "/static/media/home-astronaut.eb3ea49ff0af2d4cd9e1.jpg",
+    "static/media/home-earth.jpg": "/static/media/home-earth.7d4be29388b63ce094b3.jpg",
+    "index.html": "/index.html",
+    "main.bfd757ef.css.map": "/static/css/main.bfd757ef.css.map",
+    "main.be85cabe.js.map": "/static/js/main.be85cabe.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bfd757ef.css",
+    "static/js/main.be85cabe.js"
+  ]
+}
