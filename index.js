@@ -21,7 +21,9 @@ app.use(cookieParser());
 app.use(cors());
 
 mongoose
-  .connect("mongodb://localhost:27017/exploringSpace")
+  .connect(
+    "mongodb+srv://nandish1729:Fx8fbRgsW6Nvl3GF@cluster0.idnfnxj.mongodb.net/spaceExploration?retryWrites=true&w=majority"
+  )
   .then(console.log("connected to mongo db"))
   .catch((err) => console.log(err));
 
