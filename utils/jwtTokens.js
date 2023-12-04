@@ -4,10 +4,9 @@ exports.sendTokens = (user, statusCode, res) => {
 
     const options = {
       httpOnly: true,
-      expiresIn: new Date(
-        Date.now() + process.env.COOKIE_EXPIRE * 24 * 60 * 60 * 1000
-      ),
-      secure: process.env.NODE_ENV,
+      expiresIn: new Date(Date.now() + 5 * 24 * 60 * 60 * 1000),
+      secure:
+        "dfoijgiofmklsmdiogjfo;imc;oij;odmfkomre;oeigjiomdfo;jfefr;oijdogi;oj;oicjionetgi;j",
     };
 
     res
