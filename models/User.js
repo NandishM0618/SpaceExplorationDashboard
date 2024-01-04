@@ -39,8 +39,8 @@ UserSchema.methods.comparePassword = async function (enteredPassword) {
 };
 
 UserSchema.methods.getJWTToken = function () {
-  return jwt.sign({ id: this._id }, process.env.JWT_KEY, {
-    expiresIn: process.env.JWT_EXPIRE,
+  return jwt.sign({ id: this._id }, "onwcimoifvenmkcmeronjL:oetocmroi", {
+    expiresIn: 5,
   });
 };
 const User = mongoose.model("User", UserSchema);
